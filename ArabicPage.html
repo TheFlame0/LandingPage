@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rukn - AI-Powered Business Location Analysis</title>
+    <title>ركن - تحليل مواقع الأعمال مدعوم بالذكاء الاصطناعي</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
@@ -16,7 +16,9 @@
                         secondary: '#F5A623',
                         light: '#F5F5F5',
                         white: '#FFFFFF'
-                    }
+                    },
+                    // دعم الاتجاه من اليمين إلى اليسار
+                    direction: 'rtl'
                 }
             }
         }
@@ -98,15 +100,15 @@
     <!-- Navigation -->
     <nav class="bg-primary text-white py-4 px-6 shadow-md fixed w-full z-50">
         <div class="container mx-auto flex justify-between items-center">
-            <div class="flex items-center space-x-2">
+            <div class="flex items-center space-x-2 space-x-reverse">
                 <img src="images/logo.png" alt="" class="w-24">
             </div>
-            <div class="hidden md:flex space-x-8">
-                <a href="ArabicPage.html" class="hover:text-secondary transition">العربية</a>
-                <a href="#features" class="hover:text-secondary transition">Features</a>
-                <a href="#how-it-works" class="hover:text-secondary transition">How It Works</a>
-                <a href="#signup" class="hover:text-secondary transition">Get Early Access</a>
-                <a href="#contact" class="hover:text-secondary transition">Contact</a>
+            <div class="hidden md:flex space-x-8 space-x-reverse">
+                <a href="index.html" class="hover:text-secondary transition">EN</a>
+                <a href="#features" class="hover:text-secondary transition">الميزات</a>
+                <a href="#how-it-works" class="hover:text-secondary transition">كيف يعمل ركن</a>
+                <a href="#signup" class="hover:text-secondary transition">احصل على وصول مبكر</a>
+                <a href="#contact" class="hover:text-secondary transition">تواصل معنا</a>
             </div>
             <button
                 class="bg-secondary text-primary px-4 py-2 rounded-md font-medium hover:bg-opacity-90 transition md:hidden">
@@ -117,19 +119,19 @@
 
     <!-- Hero Section -->
     <section class="hero-gradient text-white pt-32 pb-20 px-6">
-        <div class="container mx-auto flex flex-col md:flex-row items-center space-x-48">
-            <div class="md:w-1/2 mb-10 md:mb-0 fade-in slide-left">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">Find the Perfect Location for Your Business</h1>
-                <p class="text-xl mb-8">AI-powered analysis to pinpoint optimal business locations based on your
-                    concept, local demographics, and competition.</p>
+        <div class="container mx-auto flex flex-col md:flex-row items-center md:space-x-48 md:space-x-reverse">
+            <div class="md:w-1/2 mb-10 md:mb-0 fade-in slide-right text-right">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">اعثر على الموقع المثالي لعملك</h1>
+                <p class="text-xl mb-8">تحليل مدعوم بالذكاء الاصطناعي لتحديد المواقع المثلى لعملك بناءً على فكرتك،
+                    والسكان المحليين، والمنافسة.</p>
                 <a href="#signup"
                     class="bg-secondary text-primary px-8 py-3 rounded-md font-bold text-lg hover:bg-opacity-90 transition inline-block">
-                    Get Early Access
+                    احصل على وصول مبكر
                 </a>
             </div>
-            <div class="md:w-1/4 flex justify-center fade-in slide-right delay-1">
+            <div class="md:w-1/4 flex justify-center fade-in slide-left delay-1">
                 <div>
-                    <img src="images/CUi.PNG" alt="Business location analysis" class="rounded-lg w-full h-auto">
+                    <img src="images/CUi.PNG" alt="تجربة تحليل موقع الأعمال" class="rounded-lg w-full h-auto">
                 </div>
             </div>
         </div>
@@ -138,36 +140,37 @@
     <!-- Features Section -->
     <section id="features" class="py-16 px-6 bg-white">
         <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center text-primary mb-12 fade-in slide-up">Powerful Features</h2>
+            <h2 class="text-3xl font-bold text-center text-primary mb-12 fade-in slide-up">ميزات قوية</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Feature 1 -->
-                <div class="feature-card bg-light p-6 rounded-lg transition duration-300 fade-in slide-up delay-1">
+                <div
+                    class="feature-card bg-light p-6 rounded-lg transition duration-300 fade-in slide-up delay-1 text-right">
                     <div class="text-secondary text-4xl mb-4">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-primary mb-2">Market Analysis</h3>
-                    <p class="text-gray-700">Get detailed insights into local market conditions, customer demographics,
-                        and spending patterns.</p>
+                    <h3 class="text-xl font-bold text-primary mb-2">تحليل السوق</h3>
+                    <p class="text-gray-700">احصل على رؤى تفصيلية حول ظروف السوق المحلية، وتركيبة العملاء، وأنماط
+                        الإنفاق.</p>
                 </div>
-
                 <!-- Feature 2 -->
-                <div class="feature-card bg-light p-6 rounded-lg transition duration-300 fade-in slide-up delay-2">
+                <div
+                    class="feature-card bg-light p-6 rounded-lg transition duration-300 fade-in slide-up delay-2 text-right">
                     <div class="text-secondary text-4xl mb-4">
                         <i class="fas fa-robot"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-primary mb-2">AI Recommendations</h3>
-                    <p class="text-gray-700">Our AI evaluates thousands of data points to recommend the best locations
-                        for your specific business.</p>
+                    <h3 class="text-xl font-bold text-primary mb-2">توصيات الذكاء الاصطناعي</h3>
+                    <p class="text-gray-700">يقوم ذكاءنا الاصطناعي بتحليل آلاف نقاط البيانات ليقترح أفضل المواقع لعملك.
+                    </p>
                 </div>
-
                 <!-- Feature 3 -->
-                <div class="feature-card bg-light p-6 rounded-lg transition duration-300 fade-in slide-up delay-3">
+                <div
+                    class="feature-card bg-light p-6 rounded-lg transition duration-300 fade-in slide-up delay-3 text-right">
                     <div class="text-secondary text-4xl mb-4">
                         <i class="fas fa-users"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-primary mb-2">Competitor Analysis</h3>
-                    <p class="text-gray-700">Understand your competitive landscape with detailed reports on nearby
-                        businesses and market saturation.</p>
+                    <h3 class="text-xl font-bold text-primary mb-2">تحليل المنافسين</h3>
+                    <p class="text-gray-700">افهم بيئة المنافسة المحيطة بك من خلال تقارير تفصيلية عن الأعمال المجاورة
+                        وتشبع السوق.</p>
                 </div>
             </div>
         </div>
@@ -176,33 +179,31 @@
     <!-- How It Works Section -->
     <section id="how-it-works" class="py-16 px-6 bg-primary text-white">
         <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12 fade-in slide-up">How Rukn Works</h2>
+            <h2 class="text-3xl font-bold text-center mb-12 fade-in slide-up">كيف يعمل ركن</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                 <!-- Step 1 -->
                 <div class="how-it-works-step text-center fade-in slide-up delay-1">
                     <div
                         class="bg-secondary text-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                         1</div>
-                    <h3 class="text-xl font-bold mb-2">Describe Your Business</h3>
-                    <p>Tell us about your business concept, target audience, and any specific requirements.</p>
+                    <h3 class="text-xl font-bold mb-2">وصف عملك</h3>
+                    <p>اخبرنا عن فكرة عملك، والفئة المستهدفة، وأي متطلبات خاصة.</p>
                 </div>
-
                 <!-- Step 2 -->
                 <div class="how-it-works-step text-center fade-in slide-up delay-2">
                     <div
                         class="bg-secondary text-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                         2</div>
-                    <h3 class="text-xl font-bold mb-2">AI Analysis</h3>
-                    <p>Our system analyzes demographic data, foot traffic, competition, and market conditions.</p>
+                    <h3 class="text-xl font-bold mb-2">التحليل بالذكاء الاصطناعي</h3>
+                    <p>يقوم نظامنا بتحليل البيانات السكانية، وحركة المرور، والمنافسة، وظروف السوق.</p>
                 </div>
-
                 <!-- Step 3 -->
                 <div class="how-it-works-step text-center fade-in slide-up delay-3">
                     <div
                         class="bg-secondary text-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                         3</div>
-                    <h3 class="text-xl font-bold mb-2">Get Your Report</h3>
-                    <p>Receive a detailed report with recommended locations and key insights for your business.</p>
+                    <h3 class="text-xl font-bold mb-2">استلم تقريرك</h3>
+                    <p>احصل على تقرير تفصيلي مع المواقع الموصى بها والرؤى الرئيسية لعملك.</p>
                 </div>
             </div>
         </div>
@@ -211,24 +212,22 @@
     <!-- Early Access Section -->
     <section id="signup" class="py-16 px-6 bg-white">
         <div class="container mx-auto max-w-4xl">
-            <div class="bg-light rounded-xl p-8 md:p-12 shadow-lg fade-in slide-up">
-                <h2 class="text-3xl font-bold text-center text-primary mb-6">Get Early Access</h2>
-                <p class="text-center text-gray-700 mb-8 text-lg">Join our waiting list to be among the first to use
-                    Rukn when we launch. Limited spots available!</p>
-
+            <div class="bg-light rounded-xl p-8 md:p-12 shadow-lg fade-in slide-up text-right">
+                <h2 class="text-3xl font-bold text-center text-primary mb-6">احصل على وصول مبكر</h2>
+                <p class="text-center text-gray-700 mb-8 text-lg">انضم إلى قائمة الانتظار لتكون من أوائل مستخدمي ركن عند
+                    الإطلاق. الأماكن محدودة!</p>
                 <div class="flex flex-col md:flex-row gap-4">
-                    <input type="text" id="name" placeholder="Your Name"
-                        class="flex-grow px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-secondary">
-                    <input type="email" id="email" placeholder="Your Email"
-                        class="flex-grow px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-secondary">
+                    <input type="text" id="name" placeholder="اسمك"
+                        class="flex-grow px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-secondary text-right">
+                    <input type="email" id="email" placeholder="بريدك الإلكتروني"
+                        class="flex-grow px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-secondary text-right">
                     <button id="signup-btn"
                         class="bg-secondary text-primary px-6 py-3 rounded-md font-bold hover:bg-opacity-90 transition">
-                        Join Now
+                        انضم الآن
                     </button>
                 </div>
-
                 <div id="signup-count" class="mt-6 text-center text-gray-600 fade-in delay-1">
-                    <span class="font-bold text-secondary">1,243</span> entrepreneurs have already joined
+                    <span class="font-bold text-secondary">1243</span> رائد أعمال انضمّوا بالفعل
                 </div>
             </div>
         </div>
@@ -238,27 +237,38 @@
     <footer class="bg-primary text-white py-8 px-6">
         <div class="container mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                <div class="flex items-center space-x-2 space-x-reverse mb-4 md:mb-0">
                     <img src="images/logo.png" alt="" class="w-24">
                 </div>
-                <div class="flex space-x-6 mb-4 md:mb-0 ml-16">
-                    <a href="#" class="hover:text-secondary transition"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="hover:text-secondary transition"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="hover:text-secondary transition"><i class="fab fa-instagram"></i></a>
+                <div class="flex space-x-6 space-x-reverse mb-4 md:mb-0 mr-16">
+                    <a href="#" class="hover-text-secondary transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover-text-secondary transition"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="hover-text-secondary transition"><i class="fab fa-instagram"></i></a>
                 </div>
                 <div class="text-sm text-gray-300 fade-in slide-right delay-2">
-                    &copy; 2025 Rukn. All rights reserved.
+                    &copy; ٢٠٢٥ ركن. جميع الحقوق محفوظة.
                 </div>
             </div>
         </div>
     </footer>
-    <script type="module">
-        // Scroll animation trigger
+
+    <script>
+       
+        // التمرير السلس للروابط
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // تفعيل الرسوم المتحركة عند التمرير
         document.addEventListener('DOMContentLoaded', function () {
-            // Make nav visible immediately
             document.querySelector('nav').classList.add('visible');
 
-            // Set up intersection observer for scroll animations
             const fadeElements = document.querySelectorAll('.fade-in');
 
             const observerOptions = {
@@ -279,13 +289,12 @@
                 observer.observe(element);
             });
         });
-
         document.getElementById('signup-btn').addEventListener('click', async () => {
             const name = document.getElementById('name').value.trim();
             const email = document.getElementById('email').value.trim();
 
             if (!name || !email) {
-                alert('Please fill in both fields.');
+                alert('يرجى ملء الاسم والبريد الإلكتروني.');
                 return;
             }
 
@@ -299,7 +308,7 @@
                 const result = await response.json();
 
                 if (response.ok) {
-                    alert(`Thank you for joining ${name}! We'll contact you on ${email} when we launch.`)
+                    alert(`شكراً لتسجيلك، ${name}! سنرسل لك رسالة على ${email} عند الإطلاق.`);
                     const countElement = document.getElementById('signup-count');
                     const currentCount = parseInt(countElement.textContent.match(/\d+/)[0]);
                     countElement.innerHTML = `<span class="font-bold text-secondary">${currentCount + 1}</span> رائد أعمال انضمّوا بالفعل`;
@@ -316,7 +325,6 @@
             }
         });
     </script>
-
 </body>
 
 </html>
